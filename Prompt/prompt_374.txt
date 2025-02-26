@@ -1,4 +1,0 @@
-Positive Prompt: 
-"Create a full-body fashion image of a woman in her 20s. The details of the outfit: Trendy street style, teal shiny blouse, high-waisted plaid trousers with ruffled waistband, and black open-toe heeled boots."
-Negative Prompt: 
-"Male, face, cropped shoes, unrealistic details, exaggerated poses"
