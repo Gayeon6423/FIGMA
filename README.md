@@ -30,5 +30,4 @@ source ./setup.sh
 ```
 
 ## Data 
-KFashion:
 - [KFashion](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=51)
