@@ -2,6 +2,7 @@
     FIGMA : Fine-tuning a Fashion Domain Image Generation Model Using Self-Instruct
 </h1>
 <div align="center">
+</div>
 
 This is the official repository for FIGMA : Fine-tuning a Fashion Domain Image Generation Model Using Self-Instruct.
 
