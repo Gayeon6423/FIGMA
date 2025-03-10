@@ -23,8 +23,6 @@ def calculate_fid(answer_image_folder,answer_image_file,generate_image_folder,ge
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     fid_metric = FrechetInceptionDistance(feature=64).to(device)
     fid_metric.reset()
-    
-    # PIL 이미지를 uint8 텐서로 변환하는 transform 사용
     transform = T.PILToTensor()
     
     for filename in tqdm(answer_image_file):    
@@ -201,7 +199,7 @@ def _numpy_partition(arr, kth, **kwargs):
     with ThreadPool(num_workers) as pool:
         return list(pool.map(partial(np.partition, kth=kth, **kwargs), batches))
 
-# --- FID 통계 ---
+# --- FID Statics ---
 class FIDStatistics:
     def __init__(self, mu: np.ndarray, sigma: np.ndarray):
         self.mu = mu
@@ -224,7 +222,7 @@ class FIDStatistics:
             covmean = covmean.real
         return diff.dot(diff) + np.trace(sigma1) + np.trace(sigma2) - 2 * np.trace(covmean)
 
-# --- Evaluator 클래스 ---
+# --- Evaluator Class  ---
 class Evaluator:
     def __init__(self, session, batch_size=64, softmax_batch_size=512):
         self.sess = session
@@ -241,7 +239,6 @@ class Evaluator:
         self.compute_activations(np.zeros([1, 8, 64, 64, 3]))
 
     def read_activations(self, npz_path: str) -> tuple:
-        # 간단히 np.load 사용 (npz 스트리밍 관련 코드는 제거)
         with np.load(npz_path) as obj:
             arr = obj["arr_0"]
             batches = [arr[i:i+self.batch_size] for i in range(0, arr.shape[0], self.batch_size)]
@@ -371,25 +368,17 @@ class DistanceBlock:
         )
         
 def load_and_preprocess_image(img_path, target_size=(299, 299)):
-    """
-    이미지를 로드하여 RGB로 변환, target_size로 리사이즈 후 numpy array로 변환.
-    """
     img = Image.open(img_path).convert('RGB')
     img = img.resize(target_size)
-    # Inception 네트워크는 [0, 255] 범위의 float32 이미지 또는 별도의 전처리가 필요함.
     return np.array(img).astype(np.float32)
 
 def batch_generator(file_list, folder, batch_size=64, target_size=(299, 299)):
-    """
-    주어진 파일 리스트에 대해, 이미지를 로드하여 배치 단위로 yield합니다.
-    """
     images = []
     for f in file_list:
         img_path = os.path.join(folder, f)
         img = load_and_preprocess_image(img_path, target_size)
         images.append(img)
         if len(images) == batch_size:
-            # 배치 차원 추가: [batch, height, width, channels]
             yield np.stack(images, axis=0)
             images = []
     if images:
