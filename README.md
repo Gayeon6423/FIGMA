@@ -8,7 +8,6 @@ This is the official repository for FIGMA : Fine-tuning a Fashion Domain Image G
 
 
 # Python Package
-The `figma` Python package provides an easy API to use figma models, enabling efficient and accurate coreference resolution with few lines of code.
 
 ```bash
 pip install FIGMA
