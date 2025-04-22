@@ -6,13 +6,7 @@
 
 This is the official repository for FIGMA : Fine-tuning a Fashion Domain Image Generation Model Using Self-Instruct.
 
-
-# Python Package
-
-```bash
-pip install FIGMA
-```
-or from source 
+## Setup
 
 ```bash
 git clone https://github.com/Gayeon6423/FIGMA.git
