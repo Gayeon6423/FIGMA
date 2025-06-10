@@ -5,7 +5,6 @@ from tqdm import tqdm
 from tqdm.auto import tqdm
 import torch
 from torchvision import transforms
-from torchvision.datasets.folder import default_loader
 from transformers import CLIPProcessor, CLIPModel
 from torchmetrics.image.fid import FrechetInceptionDistance
 from lpips import LPIPS
