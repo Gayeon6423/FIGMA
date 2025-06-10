@@ -11,7 +11,6 @@ This is the official repository for FIGMA : Fine-tuning a Fashion Domain Image G
 ```bash
 git clone https://github.com/Gayeon6423/FIGMA.git
 cd FIGMA
-pip install -e .
 ```
 
 ## Environment
