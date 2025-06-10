@@ -1,5 +1,4 @@
 {
-    "OPENAI_APIKEY": "",
     "HUGGING_FACE_TOKEN": "",
 
     "CAPTION_FOLDER": "../Data/Seed/Caption/",
@@ -8,23 +7,43 @@
     "SEED_IMAGE_FOLDER": "../Data/Seed/Seed_Image/",
     "SEED_LABEL_FOLDER": "../Data/Seed/EN_Seed_Label/",
 
-    "AUGEMNT_IMAGE_FOLDER" : "../Data/Augmented/Augment_KFashion_Image",
-    "AUGEMNT_LABEL_FOLDER": "../Data/Augmented/Augment_CLIP/",
+    "AUGEMNT_KFASHION_IMAGE_FOLDER" : "../Data/Augmented/Augment_KFashion_Image",
+    "AUGEMNT_LABEL_CLIP_FOLDER": "../Data/Augmented/Augment_CLIP/",
+    "AUGEMNT_IMAGE_FOLDER" : "../Data/Augmented/Augment_SD_Image",
+    "AUGEMNT_LABEL_FOLDER": "../Data/Augmented/Augment_SD_Label/",
 
     "IMAGE_SAMP_FOLDER": "../Data/Combined/KFashion/Samp_KFashion_Image/",
     "LABEL_SAMP_FOLDER": "../Data/Combined/KFashion/Samp_KFashion_Label/",
-    "TRAIN_IMAGE_FOLDER": "../Data/Combined/Train_Image_KFashion",
-    "TRAIN_LABEL_FOLDER": "../Data/Combined/Train_Label_CLIP_Summarize",
-    "TEST_IMAGE_FOLDER": "../Data/Combined/Test_Image_KFashion",
-    "TEST_LABEL_FOLDER": "../Data/Combined/Test_Label_CLIP_Summarize",
-    "NIKE_IMAGE_FOLDER": "../Data/Combined/Image_Nike",
-    "NIKE_LABEL_FOLDER": "../Data/Combined/Label_Nike",
-    "ZARA_IMAGE_FOLDER": "../Data/Combined/Image_Zara",
-    "ZARA_LABEL_FOLDER": "../Data/Combined/Label_Zara",
-    "COMBINED_CLIP_SUMMARIZE_FOLDER" : "../Data/Combined/Combined_Label_CLIP_Summarize/",
+    
+    "NIKE_IMAGE_FOLDER": "../Data/Combined/Image_Nike/",
+    "NIKE_LABEL_FOLDER": "../Data/Combined/Label_Nike/",
+    "ZARA_IMAGE_FOLDER": "../Data/Combined/Image_Zara/",
+    "ZARA_LABEL_FOLDER": "../Data/Combined/Label_Zara/",
 
-    "ANSWER_INSTRUCTION_FOLDER" : "../Data/Answer/Answer_Instruction",
-    "SD_IMAGE_FOLDER":"../Data/Answer/Generate_Image/StableDiffusion_Image",
-    "FIGMA_IMAGE_FOLDER" : "../Data/Answer/Generate_Image/FIGMA_Image",
-    "ANSWER_IMAGE_FOLDER":"../Data/Answer/Answer_Image"
+    "ANSWER_INSTRUCTION_FOLDER" : "../Data/Answer/Answer_Instruction/",
+    "SD_IMAGE_FOLDER":"../Data/Answer/Generate_Image/StableDiffusion_Image/",
+    "FIGMA_IMAGE_FOLDER" : "../Data/Answer/Generate_Image/FIGMA_Image/",
+    "ANSWER_IMAGE_FOLDER":"../Data/Answer/Answer_Image/",
+
+    "TRAIN_IMAGE_FOLDER": "../Data/Combined/Train_Image/",
+    "TRAIN_LABEL_FOLDER": "../Data/Combined/Train_Label/",
+    "TEST_IMAGE_FOLDER": "../Data/Combined/Test_Image/",
+    "TEST_LABEL_FOLDER": "../Data/Combined/Test_Label/",    
+    "COMBINED_IMAGE_FOLDER" : "../Data/Combined/Combined_Image/",
+    "COMBINED_LABEL_FOLDER" : "../Data/Combined/Combined_Label/",
+
+    "TRAIN_LABEL_EXPAND_FOLDER": "../Data/Combined/Train_Label_Expand/",
+    "TEST_LABEL_EXPAND_FOLDER": "../Data/Combined/Test_Label_Expand/",
+    "COMBINED_LABEL_EXPAND_FOLDER" : "../Data/Combined/Combined_Label_Expand/",
+
+    "TRAIN_IMAGE_KFASHION_FOLDER": "../Data/Combined/Train_Image_KFashion/",
+    "TRAIN_LABEL_CLIP_FOLDER": "../Data/Combined/Train_Label_CLIP/",
+    "TEST_IMAGE_KFASHION_FOLDER": "../Data/Combined/Test_Image_KFashion/",
+    "TEST_LABEL_CLIP_FOLDER": "../Data/Combined/Test_Label_CLIP/",
+    "COMBINED_IMAGE_KFASHION_FOLDER": "../Data/Combined/Combined_Image_KFashion/",
+    "COMBINED_LABEL_CLIP_FOLDER" : "../Data/Combined/Combined_Label_CLIP/",    
+
+    "TRAIN_LABEL_CLIP_EXPAND_FOLDER": "../Data/Combined/Train_Label_CLIP_Expand/",
+    "TEST_LABEL_CLIP_EXPAND_FOLDER": "../Data/Combined/Test_Label_CLIP_Expand/",
+    "COMBINED_LABEL_CLIP_EXPAND_FOLDER" : "../Data/Combined/Combined_Label_CLIP_Expand/"
   }
