@@ -123,7 +123,7 @@ INCEPTION_V3_PATH = "classify_image_graph_def.pb"
 FID_POOL_NAME = "pool_3:0"
 FID_SPATIAL_NAME = "mixed_6/conv:0"
 
-# --- Inception 모델 관련 함수 ---
+# --- Inception ---
 def _download_inception_model():
     if os.path.exists(INCEPTION_V3_PATH):
         return
