@@ -1,10 +1,10 @@
 <h1 align="center">
-    FIGMA : Fine-tuning a Fashion Domain Image Generation Model Using Self-Instruct
+    FIGMA
 </h1>
 <div align="center">
 </div>
 
-This is the official repository for FIGMA : Fine-tuning a Fashion Domain Image Generation Model Using Self-Instruct.
+This is the official repository for FIGMA: Scalable Automated Data Augmentation Pipeline for Instruction-Tuned Fashion Image Generation.
 
 ## Setup
 
