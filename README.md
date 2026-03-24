@@ -4,7 +4,7 @@
 <div align="center">
 </div>
 
-This is the official repository for FIGMA: Scalable Automated Data Augmentation Pipeline for Instruction-Tuned Fashion Image Generation Model.
+This is the official repository for FIGMA: Efficient Instruction-Guided Adaptation of Multimodal Foundation Models via Automated Data Augmentation.
 
 ## Setup
 
